@@ -66,6 +66,21 @@ List<Integer> list=new Vector<>();
 
 ## 추가 자료
 
+### 시간 복잡도 추가 버전
+
+| 작업                                      | 시간복잡도     | 설명                                           |
+| ----------------------------------------- | -------------- | ---------------------------------------------- |
+| add()                                     | O(1) 가끔 O(n) | index 끝에 추가할 뿐 - 특수 경우는 마지막 참고 |
+| add(index, value)                         | O(n)           | index를 다시 맞춰주어야 함                     |
+| remove(index)                             | O(n)           | index를 다시 맞춰주어야 함                     |
+| remove(value)                             | O(n)           | index를 다시 맞춰주어야 함                     |
+| get(index)                                | O(1)           | index로 접근하므로 빠름                        |
+| indexOf(value)                            | O(n)           | 모든 값을 찾아봐야 함                          |
+| set(index,value)                          | O(1)           | index로 접근하므로 빠름                        |
+| 배열 크기 조정이 이뤄질 경우, 복사할 경우 | O(n)           | 새 배열에 기존 배열 element를 복사해야 함      |
+
+### ArrayList 메소드 모음
+
 - [ArrayList 메소드](https://junjangsee.github.io/2019/07/25/java/arraylist-Method/)
 
 ## 참고 자료
