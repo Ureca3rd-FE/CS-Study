@@ -62,7 +62,88 @@
 4. 자식이 있는 노드는 삭제하지 않고 종료.
 
 ## 구현
+```java
+//node 클래스
+class Node{
+  HashMap<Character, Node> child;
+  boolean endOfWord;
+  public Node(){
+    this.child=new HashMap<>();
+    this.endOfWord=false;
+  }
+}
 
+//trie 클래스
+class Trie{
+  Node root;
+  public Trie(){
+    this.root=new Node();
+  }
+
+  public void insert(String s);
+  boolean search(String s);
+  public boolean delete(String s);
+}
+
+//삽입
+public void insert(String s){
+  Node node=this.root;
+  for(int i=0;i<s.length;i++){
+    char c=s.charAt(i);
+    node.child.putIfAbsent(c,new Node());
+    //있으면 node=node.child.get(s.charAt(i));
+    //없으면 새로운 노드 생성해서 추가
+    //해당 부분까지 하면 너무 길어져서 일단 생략
+    node=node.child.get(c); //자식 노드 이동
+  }
+  node.endOfWord=true; //마지막 노드의 마지막 여부 true
+}
+
+//탐색
+boolean search(String s){
+  for(int i=0;i<s.length;i++){
+    char c=str.charAt(i);
+    if(node.chlid.containsKey(c)){
+      //자식 노드에 c가 있을 때 계속 탐색 진행
+      node=node.child.get(c);
+    }else{
+      return false;
+    }
+  }
+  //마지막 노드 도달시
+  return node.endOfWord; //마지막 노드의 마지막 여부 반환
+}
+
+//삭제
+public boolean delete(String s){
+  return delete(this.root, s, 0);
+}
+private boolean delete(Node node, String s, int idx){
+  char c=s.charAt(idx);
+
+  //자식노드에 c가 없으면
+  if(!node.chlid.containsKey(c)) return false;
+
+  Node cur=node.chlid.get(c);
+  idx++;
+  if(idx==s.length){ //문자열 끝에 도달
+    if(!cur.endOfWord) return false;
+    cur.endOfWord=false; //false 처리
+    if(cur.chlid.isEmpty()){ //자식 없으면 지우기
+      node.child.remove(c);
+    }
+  }else{ //문자열 끝이 아닐 때
+    //재귀적으로 현재 노드부터 다시 호출
+    if(!this.delete(cur,s,idx)) return false;
+    //삭제 여부 true를 반환받고 자식 노드가 비었으면 현재 노드 삭제
+    //node=부모, cur=현재 노드 | 현재 노드를 부모 노드에서 삭제
+    if(!cur.endOfWord&&cur.child.isEmpty()){//다른 단어의 마지막 노드일 수도 있으니 체크
+      node.child.remove(c);
+    }
+  }
+  return true;
+}
+```
 
 
 ## 참고 자료
