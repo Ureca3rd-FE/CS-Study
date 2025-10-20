@@ -82,5 +82,6 @@ IPC의 일종으로 볼 수도 있지만, 운영체제 수준-저수준 IPC와 �
 
 - [IPC(Inter Process Communication)](https://gyoogle.dev/blog/computer-science/operating-system/IPC.html)
 - [[OS] 프로세스 간 통신에 사용되는 IPC(Inter Process Communication)의 종류](https://rlaehddnd0422.tistory.com/241)
+- [[운영체제] IPC 프로세스간 통신](https://heeonii.tistory.com/13)
 - [[OS]프로세스 간 통신 방법(Inter Process Communication, IPC)](https://dar0m.tistory.com/233)
 - [IPC(Inter-Process Communication)와 RPC(Remote Procedure Call)](https://organizingdata.tistory.com/141#google_vignette)
