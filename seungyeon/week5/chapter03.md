@@ -54,9 +54,6 @@ Terminated
 #### HRN(Highest Response-ratio next)
 - 우선순위를 계산해 점유 불평등을 보완(SJF 단점 보완)
 - 우선순위=(대기시간+실행시간)/실행시간
-#### + SRTF(Shortest Remaining Time First)
-- 남은 시간이 가장 짧은 작업 우선
-- 효율적이지만 오버헤드가 발생할 수 있고 예측 필요
 
 ### 선점 스케줄링
 #### RR(Round Robin)
@@ -69,6 +66,10 @@ Terminated
 - 작업들을 여러 종류의 그룹으로 나누어 여러 개의 큐를 이용하는 기법
 - 우선순위가 낮은 큐들이 실행 못하는 걸 방지하고자 각 큐마다 다른 Time Quantum을 설정
 - 우선순위가 높은 큐는 작은 Time Quantum, 우선순위가 낮은 큐는 큰 Time Quantum 할당
+#### + SRTF(Shortest Remaining Time First)
+- 남은 시간이 가장 짧은 작업 우선
+- 효율적이지만 오버헤드가 발생할 수 있고 예측 필요
+- SJF의 선점 스케줄링 버전
 
 ## CPU 스케줄링 척도
 1. Response Time: 작업이 처음 실행되기까지 걸린 시간
