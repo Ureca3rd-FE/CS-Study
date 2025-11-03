@@ -257,3 +257,9 @@ _참고 자료_
 [[CS] 조인의 종류와 원리](https://seulki1105.tistory.com/129)
 
 [[CS 전공지식노트] 조인의 종류와 원리 — 슬기로운 코딩생활](https://smiledk.tistory.com/49)
+
+---
+
+Quiz. 기준 테이블과 join 테이블의 중복된 값을 보여주는 교집합은 어떤 Join인가요?
+
+A. Inner Join
