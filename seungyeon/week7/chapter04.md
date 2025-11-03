@@ -92,5 +92,5 @@ D. 모든 NoSQL DB는 문서(document) 기반으로 동작한다.
 정답:B<br>
 NoSQL은 수평적 확장이 가능, 비정형(혹은 반정형) 데이터에 적합한 특성 때문에 대량의 비정형 데이터 처리에 적합.
 
-C는?<br>
+D는?<br>
 NoSQL의 유형에는 문서형(MongoDB), key-value형(Redis), 컬럼형(Cassandra), 그래프형(Neo4j) 등 다양한 유형이 있음.
