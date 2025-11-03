@@ -149,7 +149,7 @@ ON s.club_id = c.club_id;
 
 > 두 테이블의 모든 경우의 수을 보여주는 Join
 >
-> 결과값 = 기준 테이블의 값 + Join 테이블의 값
+> 결과값 = 기준 테이블의 값 \* Join 테이블의 값
 
 ![image.png](assets/image%2010.png)
 
