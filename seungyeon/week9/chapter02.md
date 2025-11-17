@@ -42,3 +42,4 @@ TCP는 정확한 전송을 보장해야 하기 때문에 상대와 사전에 세
 ## 참고 자료
 - [TCP Flag란?](https://skstp35.tistory.com/250)
 - [TCP/UDP와 3-Way Handshake & 4-Way Handshake](https://velog.io/@averycode/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-TCPUDP%EC%99%80-3-Way-Handshake4-Way-Handshake)
+- [[TCP] 3 way handshake & 4 way handshake](https://gyoogle.dev/blog/computer-science/network/TCP%203%20way%20handshake%20&%204%20way%20handshake.html)
