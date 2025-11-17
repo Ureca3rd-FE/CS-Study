@@ -8,7 +8,7 @@
 
 일반적인 DB와 달리 Disk가 아닌 `Memory(RAM)`에서 데이터를 처리 =`매우` 빠른 액세스 속도. (디스크 스캐닝이 필요 없기 때문에)
 
-key-value 구조를 기반으로 데이터를 처리. =`key-value형 NoSQL`
+key-value 구조를 기반으로 데이터를 처리.
 
 ## value 5가지
 
