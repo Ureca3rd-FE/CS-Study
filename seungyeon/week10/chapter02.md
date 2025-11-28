@@ -1,6 +1,15 @@
 # TLS/SSL HandShake
 
-HTTP 통신을 암호화하기 위해 사용하는 보안 프로토콜.
+## SSL/TLS란?
+
+![alt text](source/image.png)
+
+- OSI 7계층: 데이터 통신에 필요한 계층과 역할을 정확하게 정의
+- TCP/IP 4계층: 인터넷에서 사용되는 프로토콜 중심 단순화
+
+SSL/TLS는 보안 계층이란 독립적인 프로토콜 계층을 만들어 응용 계층(HTTP, FTP, SMTP 등) 과 전송 계층 사이에 끼워넣는 것.
+
+이 기술을 구현하기 위해 웹 서버에 설치하는 것이 SSL/TLS 인증서.
 
 ## SSL
 
@@ -14,7 +23,7 @@ Secure Sockets Layer
 
 ## TLS
 
-SSL의 보안 취약점을 개선
+SSL의 보안 취약점을 개선한 버전. 최신 인증서는 이걸 사용하지만 편의상 SSL 인증서라고 쭉 부른다.
 
 ## SSL/TLS 작동 방식
 
@@ -28,5 +37,7 @@ ClientHello > ServerHello > 인증서 교환 > 키 교환 > 암호화된 통신?
 
 ## 참고 자료
 
+- [[Network] TCP/IP 4계층에 대하여](https://velog.io/@dyunge_100/Network-TCPIP-4%EA%B3%84%EC%B8%B5%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)
+- [웹사이트 보안을 위한 방법, SSL이란?](https://blog.naver.com/skinfosec2000/222135874222)
 - [TLS/SSL HandShake](https://gyoogle.dev/blog/computer-science/network/TLS%20HandShake.html)
 - [SSL이란?, SSL과 TLS 정의 및 차이](https://kanoos-stu.tistory.com/46)
